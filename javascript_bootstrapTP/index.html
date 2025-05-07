@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Réservation Hôtel</title>
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <h1>Réserver un séjour</h1>
+
+  <label>Date d'arrivée :</label>
+  <input type="date" id="arrivee"><br><br>
+
+  <label>Date de départ :</label>
+  <input type="date" id="depart"><br><br>
+
+  <label>Adultes :</label>
+  <input type="number" id="adultes" value="0" readonly>
+  <button onclick="changerValeur('adultes', 1)">+</button>
+  <button onclick="changerValeur('adultes', -1)">-</button><br><br>
+
+  <label>Enfants :</label>
+  <input type="number" id="enfants" value="0" readonly>
+  <button onclick="changerValeur('enfants', 1)">+</button>
+  <button onclick="changerValeur('enfants', -1)">-</button><br><br>
+
+  <div id="zone-ages"></div>
+
+  <label>Chambres :</label>
+  <input type="number" id="chambres" value="0" readonly>
+  <button onclick="changerValeur('chambres', 1)">+</button>
+  <button onclick="changerValeur('chambres', -1)">-</button><br><br>
+
+  <label><input type="checkbox" id="travail"> Je voyage pour le travail</label><br><br>
+
+  <button onclick="validerReservation()">Rechercher</button>
+  <button onclick="resetForm()">Effacer</button>
+
+  <hr>
+
+  <div id="resultat"></div>
+
+</body>
+</html>
