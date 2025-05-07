@@ -8,24 +8,46 @@
                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
         </head>
-        <body>
+        <body class="index">
             
             <section class="container-fluid">
                 <h1 class="col-sm-8 bg-success offset-md-2 text-white text-center">BOOKING HÔTEL<p>Vos dates de reservation - Toutes annulation doit se faire 48H avant</p></h1>
             </section>
 
-            <div class="card" style="width: 18rem;">
+            <div class="col col-md-4 pb-3 offset-md-1" style="background-color: blue;">
+              <div class="row">
+                <div class="mb-3">
+                <label for="Nom">Nom :</label>
+                <input type="text" id="Nom" name="Nom" required><br>
+                </div>
+        
+              <div class="mb-3">    
+                <label for="Prénom">Prénom :</label>
+                <input type="text" id="Prénom" name="Prénom" required><br>
+              </div>
+            </div>        
+
+
+
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Je voyage pour le travail</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Rechercher</button><br>
+                <button type="submit" class="btn btn-primary">Effacer</button><br>
+              </form><br><br>
+              
+              <!--<div class="card" style="width: 18rem;">
                 <div class="card-header text-danger">
                   Confirmation de réservation
                 </div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Nombre d'adulte(s)</li>
-                  <li class="list-group-item">Nombre d'enfant(s)</li>
-                  <li class="list-group-item">Nombre de chambre(s)</li>
-                  <li class="list-group-item">Voyage pour le travail</li>
+                  <li class="list-group-item">Nombre d'adulte(s): </li>
+                  <li class="list-group-item">Nombre d'enfant(s): </li>
+                  <li class="list-group-item">Nombre de chambre(s): </li>
+                  <li class="list-group-item">Voyage pour le travail: </li>
                 </ul>
-              </div>
-              
-
-        </body>
+              </div>-->
+            </div>
+          </body>
  </html>
